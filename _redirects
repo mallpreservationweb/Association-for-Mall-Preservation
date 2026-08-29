@@ -1,6 +1,5 @@
 / /index.html 200
-/about-us /about.html 200
-/about /about-us 301
+/about /about.html 200
 /team /team.html 200
 /get-involved /get-involved.html 200
 /news /news.html 200
