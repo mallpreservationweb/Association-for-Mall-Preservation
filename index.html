@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMP | Association for Mall Preservation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container nav-wrapper">
+            <a href="/" class="logo-container" aria-label="Return to homepage">
+                <div class="logo-icon"><img src="amp-logo-web.png" alt="AMP logo"></div>
+            </a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+            <label for="nav-toggle" class="nav-toggle-btn" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="nav-links">
+                <a href="/">Home</a>
+                <a href="/about-us">About</a>
+                <a href="/team">Team</a>
+                <a href="/get-involved">Get Involved</a>
+                <a href="/news">News</a>
+                <a href="/blog">Blog</a>
+                <a href="/events">Events</a>
+            </nav>
+            <a href="/contact" class="btn btn-primary desktop-contact">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div>
+                    <div class="tagline-badge"><i class="fa-solid fa-leaf"></i> New Life for Old Spaces</div>
+                    <h1>Breathing new life into old spaces.</h1>
+                    <p>AMP connects property owners, youth leaders, and local partners to turn underused retail space into inclusive cultural hubs, startup marketplaces, and civic gathering places.</p>
+                    <div class="hero-cta">
+                        <a href="/get-involved" class="btn btn-primary">Join Today</a>
+                    </div>
+                </div>
+                <div class="hero-image-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/DeSoto_Square_Mall_-_Bradenton%2C_FL.jpg" alt="DeSoto Square Mall in Bradenton, Florida">
+                    <div class="hero-image-overlay">
+                        <div class="hero-image-details">
+                            <p>DeSoto Square Mall is the founder's childhood mall and the inspiration for the creation of AMP.</p>
+                            <p class="hero-image-source">Source: <a href="https://commons.wikimedia.org/wiki/File:DeSoto_Square_Mall_-_Bradenton,_FL.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container news-grid" style="margin-top: 0;">
+            <article class="news-card news-card--featured">
+                <span class="news-card-badge">Latest</span>
+                <h3>Applications for Executive Committee positions are open!</h3>
+                <p>We are inviting interested members to apply for leadership roles on the Executive Committee. These positions help guide AMP’s strategy and strengthen the connection between chapters and national priorities.</p>
+                <a href="https://forms.cloud.microsoft/r/fcBuuNCtYu" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Apply</a>
+            </article>
+        </div>
+
+        <section>
+            <div class="container section-header">
+                <span class="section-tag">What We Do</span>
+                <h2>Our Strategic Blueprint</h2>
+            </div>
+            <div class="container activities-grid">
+                <article class="activity-card"><div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div><h3>Student & Community Chapters</h3><p>Mobilizing young leaders to organize events, design activations, and drive community-led reuse.</p></article>
+                <article class="activity-card"><div class="card-icon"><i class="fa-solid fa-handshake"></i></div><h3>Property Partnerships</h3><p>Working with mall owners to secure accessible space for nonprofits, makers, and local businesses.</p></article>
+                <article class="activity-card"><div class="card-icon"><i class="fa-solid fa-calendar-days"></i></div><h3>Short-Term Activations</h3><p>Hosting pop-up markets, art showcases, and educational programs that bring people back in.</p></article>
+                <article class="activity-card"><div class="card-icon"><i class="fa-solid fa-chart-line"></i></div><h3>Research & Reports</h3><p>Providing feasibility studies and impact data to support sustainable reuse decisions.</p></article>
+                <article class="activity-card"><div class="card-icon"><i class="fa-solid fa-users-rectangle"></i></div><h3>Policy & Education</h3><p>Leading workshops and roundtables to make adaptive reuse more viable for communities.</p></article>
+            </div>
+        </section>
+
+        <section class="contributions">
+            <div class="container section-header">
+                <span class="section-tag">Why It Matters</span>
+                <h2>The Future We're Fighting For</h2>
+            </div>
+            <div class="container contribution-carousel" aria-label="Why AMP matters carousel">
+                <button class="carousel-btn prev" type="button" aria-label="Previous slide">&#10094;</button>
+                <div class="carousel-track">
+                    <article class="contribution-slide active">
+                        <div class="contribution-row">
+                            <div class="contribution-text"><h3>Environmental Sustainability</h3><p>Keeping existing buildings active reduces waste, energy use, and carbon emissions.</p></div>
+                            <div class="feature-box"><i class="fa-solid fa-recycle" style="font-size: 2rem; color: var(--primary-green); margin-bottom: 16px;"></i><h4>Circular reuse</h4><p>Reusing malls preserves materials and supports greener community outcomes.</p></div>
+                        </div>
+                    </article>
+                    <article class="contribution-slide">
+                        <div class="contribution-row reverse">
+                            <div class="contribution-text"><h3>Economic Resilience</h3><p>AMP helps turn vacant storefronts into affordable incubators for local entrepreneurs.</p></div>
+                            <div class="feature-box"><i class="fa-solid fa-shop" style="font-size: 2rem; color: var(--slate-blue); margin-bottom: 16px;"></i><h4>Local commerce</h4><p>Accessible retail space supports small businesses and community-driven ventures.</p></div>
+                        </div>
+                    </article>
+                    <article class="contribution-slide">
+                        <div class="contribution-row">
+                            <div class="contribution-text"><h3>Community Connection</h3><p>Revitalized malls become modern third places for arts, culture, and neighborhood gatherings.</p></div>
+                            <div class="feature-box"><i class="fa-solid fa-people-group" style="font-size: 2rem; color: var(--sand-gold); margin-bottom: 16px;"></i><h4>Civic hub</h4><p>These spaces host programs that uplift local voices and foster social connection.</p></div>
+                        </div>
+                    </article>
+                </div>
+                <button class="carousel-btn next" type="button" aria-label="Next slide">&#10095;</button>
+                <div class="carousel-dots" aria-label="Carousel navigation">
+                    <button class="carousel-dot active" type="button" aria-label="Show slide 1"></button>
+                    <button class="carousel-dot" type="button" aria-label="Show slide 2"></button>
+                    <button class="carousel-dot" type="button" aria-label="Show slide 3"></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to partner or launch a chapter?</h2>
+                <p>Join the AMP network, help activate a space, or support the next generation of placemaking leaders.</p>
+                <div class="hero-cta">
+                    <a href="/get-involved" class="btn btn-primary">Start a Chapter</a>
+                    <a href="/contact" class="btn btn-primary">Contact Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <div class="logo-icon"><img src="amp-logo-web.png" alt="AMP logo"></div>
+                <p>New life for old spaces.</p>
+            </div>
+            <div class="footer-links"><h4>Explore</h4><ul><li><a href="/about-us">About</a></li><li><a href="/team">Team</a></li><li><a href="/get-involved">Get Involved</a></li></ul></div>
+            <div class="footer-links"><h4>Connect</h4><ul><li><a href="/blog">Blog</a></li><li><a href="/events">Events</a></li><li><a href="/contact">Contact</a></li></ul></div>
+        </div>
+        <div class="container footer-bottom"><p>© 2026 Association for Mall Preservation. All rights reserved.</p></div>
+    </footer>
+</body>
+</html>
+
+
+
+
