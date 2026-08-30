@@ -972,8 +972,14 @@ footer {
     margin-bottom: 34px;
 }
 
+.footer-links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
 .footer-links ul li {
-    margin-bottom: 12px;
+    margin-bottom: 0;
 }
 
 .footer-links a {
