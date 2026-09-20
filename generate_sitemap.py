@@ -14,7 +14,7 @@ def get_html_files():
     return sorted(
         filename
         for filename in os.listdir(ROOT_DIR)
-        if filename.endswith(".html")
+        if filename.endswith(".html") and filename != "thank-you.html"
     )
 
 
@@ -27,7 +27,7 @@ def build_sitemap():
         if filename == "index.html":
             loc = f"{BASE_URL}/"
         else:
-            loc = f"{BASE_URL}/{filename}"
+            loc = f"{BASE_URL}/{filename[:-5]}"
         url_entries.append(
             "  <url>\n"
             f"    <loc>{loc}</loc>\n"
