@@ -13,7 +13,7 @@ function buildSitemap() {
 
   const urlEntries = htmlFiles
     .map((file) => {
-      const loc = file === 'index.html' ? `${baseUrl}/` : `${baseUrl}/${file}`;
+      const loc = file === 'index.html' ? `${baseUrl}/` : `${baseUrl}/${file.slice(0, -5)}/`;
       return `  <url>\n    <loc>${loc}</loc>\n    <lastmod>${today}</lastmod>\n  </url>`;
     })
     .join('\n');

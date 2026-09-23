@@ -14,6 +14,13 @@ jobs:
       - name: Copy CNAME into site root
         run: cp CNAME .
 
+      - name: Prepare extensionless page URLs
+        run: |
+          for page in about team get-involved news blog events contact; do
+            mkdir -p "$page"
+            cp "$page.html" "$page/index.html"
+          done
+
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
