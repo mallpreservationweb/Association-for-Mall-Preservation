@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; form-action 'self' https://formsubmit.co; frame-ancestors 'none'; object-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' https: data:; connect-src 'self'; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>AMP News | Mall Preservation Updates</title>
     <meta name="description" content="Read the latest AMP announcements, organizational updates, and opportunities to support mall preservation and community reuse.">
     <link rel="canonical" href="https://mallpreservation.org/news">
@@ -75,9 +77,13 @@
                     </div>
                     <form class="newsletter-form" action="https://formsubmit.co/mallpreservation@outlook.com" method="POST">
                         <input type="hidden" name="_subject" value="Newsletter signup">
-                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_captcha" value="true">
                         <input type="hidden" name="_next" value="https://mallpreservation.org/thank-you">
-                        <input type="email" name="email" placeholder="Enter your email address" aria-label="Email address" required>
+                        <div class="form-honeypot" aria-hidden="true">
+                            <label for="newsletter-website">Leave this field empty</label>
+                            <input type="text" id="newsletter-website" name="_honey" tabindex="-1" autocomplete="off">
+                        </div>
+                        <input type="email" name="email" placeholder="Enter your email address" aria-label="Email address" autocomplete="email" maxlength="254" required>
                         <button type="submit" class="btn btn-primary">Subscribe</button>
                     </form>
                 </div>

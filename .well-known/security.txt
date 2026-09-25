@@ -1,0 +1,4 @@
+Contact: mailto:mallpreservation@outlook.com
+Expires: 2027-09-25
+Preferred-Languages: en
+Canonical: https://mallpreservation.org/.well-known/security.txt
