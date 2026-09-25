@@ -27,7 +27,7 @@ def build_sitemap():
         if filename == "index.html":
             loc = f"{BASE_URL}/"
         else:
-            loc = f"{BASE_URL}/{filename[:-5]}/"
+            loc = f"{BASE_URL}/{filename[:-5]}"
         url_entries.append(
             "  <url>\n"
             f"    <loc>{loc}</loc>\n"

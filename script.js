@@ -24,7 +24,21 @@ document.addEventListener('DOMContentLoaded', () => {
   initAccordionBehavior();
   initChapterSearch();
   initContributionCarousel();
+  initContactForm();
 });
+
+const initContactForm = () => {
+  const contactForm = document.querySelector('form[action*="formsubmit.co"]');
+  const honeypot = contactForm?.querySelector('input[name="_honey"]');
+
+  if (!contactForm || !honeypot) return;
+
+  contactForm.addEventListener('submit', (event) => {
+    if (honeypot.value.trim()) {
+      event.preventDefault();
+    }
+  });
+};
 
 const initContributionCarousel = () => {
   const carousel = document.querySelector('.contribution-carousel');

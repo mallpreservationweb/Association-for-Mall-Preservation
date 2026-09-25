@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact AMP | Mall Preservation Partnerships</title>
     <meta name="description" content="Contact the Association for Mall Preservation about partnerships, chapters, events, research, or ways to support community-led mall reuse.">
-    <link rel="canonical" href="https://mallpreservation.org/contact/">
+    <link rel="canonical" href="https://mallpreservation.org/contact">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Contact AMP | Mall Preservation Partnerships">
     <meta property="og:description" content="Contact AMP about partnerships, chapters, events, research, or ways to support community-led mall reuse.">
@@ -37,14 +37,14 @@
             </label>
             <nav class="nav-links">
                 <a href="/">Home</a>
-                <a href="/about/">About</a>
-                <a href="/team/">Team</a>
-                <a href="/get-involved/">Get Involved</a>
-                <a href="/news/">News</a>
-                <a href="/blog/">Blog</a>
-                <a href="/events/">Events</a>
+                <a href="/about">About</a>
+                <a href="/team">Team</a>
+                <a href="/get-involved">Get Involved</a>
+                <a href="/news">News</a>
+                <a href="/blog">Blog</a>
+                <a href="/events">Events</a>
             </nav>
-            <a href="/contact/" class="btn btn-primary desktop-contact">Contact</a>
+            <a href="/contact" class="btn btn-primary desktop-contact">Contact</a>
         </div>
     </header>
 
@@ -68,8 +68,12 @@
                 </div>
                 <form class="contact-panel" action="https://formsubmit.co/mallpreservation@outlook.com" method="POST">
                     <input type="hidden" name="_subject" value="Contact form submission">
-                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_captcha" value="true">
                     <input type="hidden" name="_next" value="https://mallpreservation.org/thank-you">
+                    <div class="form-honeypot" aria-hidden="true">
+                        <label for="website">Leave this field empty</label>
+                        <input type="text" id="website" name="_honey" tabindex="-1" autocomplete="off">
+                    </div>
                     <div class="form-group"><label for="name">Name</label><input type="text" id="name" name="name" placeholder="Your name" required></div>
                     <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="you@example.com" required></div>
                     <div class="form-group"><label for="reason">Reason</label><select id="reason" name="reason"><option>General inquiry</option><option>Partnership</option><option>Start a chapter</option><option>Other</option></select></div>
