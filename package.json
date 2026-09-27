@@ -1,0 +1,8 @@
+{
+  "name": "amp-website",
+  "private": true,
+  "scripts": {
+    "sitemap": "python3 generate_sitemap.py",
+    "sitemap:watch": "python3 generate_sitemap.py --watch"
+  }
+}
